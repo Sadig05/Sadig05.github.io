@@ -1,0 +1,43 @@
+textarea{
+    width: 30%;
+    height: 90px;
+    resize: none;
+    padding: 8px 12px;
+    border: 2px solid #ffbd03;
+    border-radius: 4px;
+}
+
+input{
+    width: 30%;
+    padding: 8px 12px;
+    border: 2px solid #ffbd03;
+    border-radius: 4px;
+}
+
+
+
+.felx{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 0 8px 0;
+}
+
+hr.hr{
+    width: 80%;
+    text-align: center;
+    border: 5px dashed orangered;
+}
+
+.btn-submit{
+    margin: 10px 0 0 0;
+    padding: 8px 17px;
+    background-color:  #33b249;
+    border: none;
+    color: white;
+    line-height: 25px;
+}
+
+.btn-submit:hover{
+    background-color: #4681f4;
+}
