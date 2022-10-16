@@ -1,5 +1,18 @@
+.comments{
+    width: 100%;
+}
+
+form{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 textarea{
-    width: 30%;
+    width: 100%;
     height: 90px;
     resize: none;
     padding: 8px 12px;
@@ -8,7 +21,7 @@ textarea{
 }
 
 input{
-    width: 30%;
+    width: 100%;
     padding: 8px 12px;
     border: 2px solid #ffbd03;
     border-radius: 4px;
@@ -16,11 +29,12 @@ input{
 
 
 
-.felx{
+.flex{
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin: 0 0 8px 0;
+    width: 60%;
 }
 
 hr.hr{
@@ -29,8 +43,9 @@ hr.hr{
     border: 5px dashed orangered;
 }
 
+
 .btn-submit{
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 15px;
     padding: 8px 17px;
     background-color:  #33b249;
     border: none;

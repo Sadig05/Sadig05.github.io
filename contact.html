@@ -18,20 +18,22 @@
         </ul>
       </header>
     <section class="comments">
-        <form action="">
-            <div class="felx">
-                <label>Name:</label>
-                <input type="text"/>
+        <form action="mailto:sadiq.letifli70@gmail.com" method="post" enctype="text/plain">
+            <div class="flex">
+                <label for="subject">subject:</label>
+                <input name = "subject" type="text" placeholder="subject"/>
             </div>
-            <div class="felx">
-                <label>Last name:</label>
-                <input type="text"/>
+            <div class="flex">
+                <label for="email">Email:</label>
+                <input required name="email" type="text" placeholder="email"/>
             </div>
-            <div class="felx">
-                <label>Comment:</label>
-                <textarea></textarea>
+            <div class="flex">
+                <label for="message">Message:</label>
+                <textarea name="message"></textarea> 
             </div>
-            <button class="btn-submit" >submit</button>
+            <div class="flex">
+                <input type="submit" value="Send" class="btn-submit" />
+            </div>
         </form>
     </section>
 </body>
