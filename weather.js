@@ -102,7 +102,7 @@ let temperature_output = document.getElementById("temperature");
 let humidity_output = document.getElementById("humidity");
 let pressure_output = document.getElementById("pressure");
 let wind_speed_output = document.getElementById("wind-speed");
-
+let time = document.getElementById('local-time');
 
 //displays the fetched data
 async function showData(data){
@@ -116,8 +116,9 @@ async function showData(data){
        weather_desc_output.innerHTML = `weather description: ${data.weather[0].description}`;
        temperature_output.innerHTML = `temperature: ${Math.floor(data.main.temp)}℃, minimum temperature: ${data.main.temp_min}℃, maximum temperature: ${data.main.temp_max}℃, feels like: ${data.main.feels_like}℃`;
        humidity_output.innerHTML = `humidity: ${data.main.humidity}%`;
-        pressure_output.innerHTML = `pressure: ${data.main.pressure}`;
-        wind_speed_output.innerHTML = `wind speed: ${data.wind.speed}km/h, wind direction: ${findWindDirection(data.wind.deg)}`;
+       pressure_output.innerHTML = `pressure: ${data.main.pressure}`;
+       wind_speed_output.innerHTML = `wind speed: ${data.wind.speed}m/s, wind direction: ${findWindDirection(data.wind.deg)}`;
+       time.innerHTML = `local time: ${timeConverter(data.dt)}`;
     }
 }
 
@@ -174,9 +175,9 @@ async function getCountryName(code){
     }
 }
 
+function timeConverter(time){
+    let new_time = new Date(time * 1000);
+    return new_time.toLocaleTimeString("it-IT");
+}
 
 
-
-//add html link to navbar;
-//add styling
-//correct temperature based on the metric unit;
