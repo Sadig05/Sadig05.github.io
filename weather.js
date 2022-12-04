@@ -175,9 +175,11 @@ async function getCountryName(code){
     }
 }
 
+
+//converting time from UNIX, UTC format to Date
 function timeConverter(time){
     let new_time = new Date(time * 1000);
-    return new_time.toLocaleTimeString("it-IT");
+    return new_time.toLocaleString("it-IT");
 }
 
 
